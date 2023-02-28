@@ -3,9 +3,9 @@ var AWS = require('aws-sdk')
 
 var s3 = new AWS.S3({ params: { Bucket: 'goswamibucket33' } });
 
-fs.readFile("demoFile.txt", (err, data) => {
+fs.readFile("demoFile2.txt", (err, data) => {
     var params = {
-        Key: "myDemoFile.txt",
+        Key: "myDemoFile2.txt",
         Body: data
     };
 
